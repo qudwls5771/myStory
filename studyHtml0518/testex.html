@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>글보기</title>
+
+    <style>
+
+        .main_bottop_box{
+            border-bottom: 2px solid #333;
+            width: 824px;
+            
+        }
+
+        table{
+            background: rgb(231, 188, 188);
+            width: 824px;
+        }
+
+        
+        #block1{ /*글 내용 div 블럭*/
+            display: flex;
+            width: 824px;
+            height: 300px;
+            background-color: rgb(175, 101, 175);
+            line-height: 300%;
+        }
+
+
+        #block2{ /*덧글 쓰기 div 블럭*/
+            display: flex;
+            justify-content: right;
+            text-align: right;
+            width: 824px;
+            height: 100px;
+            background-color: coral;
+            padding: 12px 0 0 0;
+        }
+
+        #block3{/*삭제 목록 글쓰기 div 블럭*/
+            display: flex;
+            justify-content: right;
+            text-align: right;    
+            height: 50px;            
+            width: 824px;
+            background-color: rgb(110, 177, 162);
+            padding: 12px 0 0 0;
+        }
+
+        h3{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+        <div class="main_bottop_box">
+            <h3>게시판</h3>    
+        </div>
+            <form>
+                <table> 
+                    <tr>
+                        <td>
+                            <div> <!--제목, 이름, 조회수, 날짜 display = display:inline-block한단위들에만 들어감(span, p)-->
+                                <span style="display:inline-block; width:400px;" name="title">게시글 1입니다</span>
+                                <span style="display:inline-block; width:100px;" name ="writer" align ="right">김병진</span>
+                                <span style="display:inline-block; width:100px; " name = "view" align ="right">조회 :15</span>
+                                <span style="display:inline-block; width:200px; " align ="left" name ="day">2022-05-18</span>        
+                            </div>
+                        </td>
+                    </tr>
+                   
+                </table>
+
+                    <div id = "block1"><!--글-->
+                        <div>ghghgh</div>
+                    </div>
+
+                    <div id ="block2"><!--덧글쓰기-->
+                            <textarea cols="70" rows="5"></textarea>
+                            <input type="button" value="덧글쓰기" name="writes">                        
+                    </div>
+                    
+                    <div id = "block3"><!--삭제, 목록, 글쓰기-->
+                            <a href=""><input type="button" value="삭제" name="del"></a>
+                            <a href="test3.html"><input type="button" value="목록" name="catolg"></a>
+                            <a href="testw.html"><input type="button" value="글쓰기" name="write"></a>
+                    </div>
+            </form>
+        
+    
+
+</body>
+</html>

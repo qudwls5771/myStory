@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <title>게시판</title>
+    <!-- 게시판 만들기 및 설명-->
+    <style>
+
+        table{ /*태그 선택자 : 특정한 태그를 선택*/
+            border-collapse: collapse;
+            border-top: 1px solid #333333;
+            width: 100%;
+        }
+        p{text-align:center;}
+        td{
+            /*테이블 테두리 선 굵기 및 1개로 통일 색도 넣음*/
+         /*   margin-left: auto;
+            margin-right: auto;*/
+            border-collapse :collapse;
+            border-top: 1px solid #333333;
+            border-bottom: 1px solid #23345a;
+        }
+        /*아이디 선택, 단 한번 적용할 때 사용하는게 좋음(웹 요소배치) 
+        그에 반해 클래스는 자주 사용할 때 좋음(글자색, 굵기 나중에 적용할 수 있는 스타일 지정)*/
+        #aside{background-color: gainsboro;}
+        #header {
+            background-color: rgb(26, 100, 185);
+            margin: 0 auto;
+            
+        }
+
+        /*총 개의 게시물 부문의 칸을 왼쪽으로*/
+        #thss{text-align: left;}
+
+        #circle2 > h1
+        {/*div 태그를 수평정렬을 위해 display 옵션의 inline값을 넣습니다.*/
+        display: inline-block;}
+        /*태그 선택자 : */
+      
+
+    </style>
+
+
+</head>
+<body>
+    
+    <div>
+        <h2 id ="header">게시판</h2>
+    <table>
+        <table>
+            <form>
+            <tr>
+                <th width ="440" id = "thss">▷총 개의 게시물이 있습니다.</th>
+                <th width = "170" style="float: right;" name="select">SELECT <select>
+                        <option value = "제목">제목</option>
+                        <option value = "조회수">조회수</option>
+                        <option value = "날짜">날짜</option>
+                    </select></th>
+                <th>
+                    <input type="search" size="10" >
+                    <input type="button" value="검색" name="search">
+                </th>
+            </tr>
+            </form>
+    
+    <table>
+            <thead>
+                <tr id = "aside">
+                    <th width = "100" nmae = "number">번호</th>
+                    <th width = "400" name = "title">제목</th>
+                    <th width = "100" name = "writer">글쓴이</th>
+                    <th width = "100" name = "day">일시</th>
+                    <th width = "50" name = "view">조회수</th>
+                </tr>
+
+                <tr>
+                    
+                    <td><p nmae = "number">1</p></td>
+                    <td><a href="testex.html" name = "title">게시글 1</a></td>
+                    <td><p name = "writer">김병진</p></td>
+                    <td><p name = "day">2022-05-18</p></td>
+                    <td><p name = "view">15</p></td>
+                       
+                </tr>
+                <tr>       
+                    <td><p>2</p></td>
+                    <td><a href="">게시글2</a></td>
+                    <td><p>김병진</p></td>
+                    <td><p>2022-05-18</p></td>
+                    <td><p>13</p></td>
+                       
+                </tr>
+                
+            </thead>
+    </table>
+    
+    <table>
+        <tr>
+            <th style="float: right"><a href="">◀이전</a><a href=""> 1 </a><a href="">다음▶</a> </th>
+            <th>
+                <a href="testw.html"><input type="button" value ="글쓰기" style="float: right;"></a>
+                <input type="button" value="목록" size="20" style="float: right;">
+            </th>
+        </tr>
+    
+    </table>
+    </div>      
+        
+
+
+</body>
+</html>
