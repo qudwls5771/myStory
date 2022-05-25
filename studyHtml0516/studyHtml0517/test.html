@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>블로그 게시글 업로드</title>
+    
+    <style>
+        form label.reg {
+            font-size: 14px;
+            width: 120px;
+            float: left;
+        }
+
+        form label em {
+            font-size: 15px;
+            color: red;
+            font-weight: 800;
+        }
+
+        form ul li {
+            list-style: none;
+        }
+
+        
+
+
+    </style>
+</head>
+
+<body>
+    <h1>블로그 게시글 업로드</h1><!-- 뭔가 좀 맘에 안듬-->
+    <form>
+        이름 : <input type = "text"></br>
+        이메일 : <input type = "text"></br>
+        게시글 내용 : <textarea name = "addText" rows="2" cols="50"></textarea></br>
+    </br>
+        <input type = "submit" value = "submit"/> 
+
+    </form>
+    
+    <h1>간편 회원 가입</h1>
+    #TCP School 사이트에서 filedset 태그와 placeholder 속성값을 참조하여 작성해 주세요
+    <ol>
+    <form action="--" method="get"><!-- 이게 뭔 뜻인지 물어보기-->
+        <li>
+        <fieldset style= "width: 310px;"><!--1. 이거 안함-->
+            <legend>입력정보</legend>
+
+            <label for="user_name"> 이름 : </label>
+            <input type="text" id="user_name" name="user_name" size="10" placeholder="이름" autofocus > </br>
+            <label for="us_email"> 이메일 : </label>
+            <input type="email" id="us_email" name="us_email" placeholder="이메일"></br>
+            <label for="tel"> 전화번호 : </label>
+            <input type="tel" id="tel" name="tel" placeholder="01011112222"></br>
+            
+            <!--pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}" required-->
+        </fieldset>
+        </li>
+        
+        <li><lable class ="reg" for="new_name">인증코드 :</lable>
+            <input type="number">
+            </li>
+            
+    </form>
+    </ol>
+    <h1>기본 회원 가입</h1>
+    # TCP School 사이트에서 select tag 참조하여 작성해 주세요
+    <form> <!-- 빈칸의 정렬 문제..-->
+        <fieldset style= "width: 410px;">
+        <ul>
+            <li><label class="reg" for = "new_id">아이디 <em>*</em></label>
+            <input type = "text" id = "new_id" name = "new_id"></li>
+            <li><label class="reg" for = "new_pwd">비밀번호 <em>*</em></label>
+            <input type = "text" pwd = "new_pwd" name = "new_pwd"></li>
+            <li><label class="reg" for ="new_pwdck">비밀번호확인<em>*</em></label>
+            <input type = "text" pwdck = "new_pwdck" name = "new_pwdck"></li>
+            <label class="reg" for ="new_name1">이름<em>*</em></label>
+            <input type = "text" names1 = "new_name1" name = "new_name1">
+
+            </br>
+           
+            <input type = "radio" name ="Blog1" value ="남">남자 
+            <input type = "radio" name ="Blog2" value ="여">여자
+            <input type = "radio" name ="Blog3" value ="입력안함">입력안함
+           </br>
+            전화번호 <select>
+                 <option value="02">02</option>
+                 <option value = "041">041</option>
+                 <option value = "010">010</option>
+                </select>
+                <input type ="tel" name = "phone1" size ="5">
+                <input type ="tel" name = "phone2" size ="5">
+            </br>
+             이메일  <input type="email">@
+                <select>
+                    <option value = "선택">선택</option>
+                    <option value = "naver">naver</option>
+                    <option value = "gmail">gmail</option>
+                </select></br>
+        
+        </ul>
+        </fieldset>
+        소개내용 <textarea cols="50" rows ="7"></textarea>  </br>
+    </form>
+
+
+</body>
+</html>

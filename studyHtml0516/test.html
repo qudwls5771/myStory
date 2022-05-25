@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>가족 생태체험여행</title>
+</head>
+
+<body>
+    
+    <h3><a href="https://www.naver.com/">네이버 사이트로 이동</a></h3>
+    <h3><a href="https://www.google.com/">구글 사이트로 이동</a></h3>
+
+    
+        <h1>가족 생태체험여행</h1>
+        <ol><!--목록-->
+            <li>기간 : 2017년 4월 ~ 10월</li> <!-- li는 목록에 순서를 부여-->
+            <li>대상 : 가족(초등학생 이상 어린이, 부모 및 동반자 참여)</li>
+            <ol>※ 프로그램의 성격에 따라 대상자의 연령이 변경될 수 있습니다.</ol> <!--순서가 없는 목록을 만든다.-->
+            <li>인원 : 1반 20명 내외(부모 포함) 정원</li>
+            <li>참가비 : 해당 프로그램 참조</li>
+            <li>신청방법 : 홈페이지 신청, 사전결제(카드)</li>
+        </ol> 
+        #이미지 소스는 img라는 폴더를 생성하여 상대경로를 써 주세요.</br>
+        #이미지가 없을 경우 alt tag를 써주셔서 이미지 없을 출력하시고,</br>
+        #img 소스는 편하신대로 출력하시면 됩니다. 
+        
+        <table border = "1"> 
+            <!--전체적으로 적용, 선택적으로-->
+            <style>
+                th ,td{
+                    text-align : center;
+                }
+
+            </style>
+        <tr> <!--열구분-->
+            <th>열차번호</th> <!--열의 제목?-->
+            <th>출발</th>
+            <th>도착</th>
+            <th>특실</th>
+            <th>일반실</th>
+            <th>소요시간</th>
+        </tr>
+
+        <tr>
+            <td>175</td><!-- 열을 셀로 나눔-->
+            <td>서울 </br>21:00</td>
+            <td>부산 </br>23:44</td>
+            <td><img alt = "이미지없음"></td>
+            <td><img alt = "이미지없음"></td>
+            <td>02:44</td>
+
+
+        </tr>
+
+        <tr>
+            <td>177</td>
+            <td>서울 </br>21:30</td>
+            <td>부산 </br>00:08</td>
+            <td><img alt = "이미지없음"></td>
+            <td><img alt = "이미지없음"></td>
+            <td>02:38</td>
+
+
+        </tr>
+
+        <tr>
+            <td>179</td>
+            <td>서울 </br>22:00</td>
+            <td>부산 </br>23:42</td>
+            <td><img alt = "이미지없음"></td>
+            <td><img alt = "이미지없음"></td>
+            <td>02:42</td>
+
+
+        </tr>
+
+
+
+        </table>
+    </br>
+        <h3><caption>오늘의 날씨</caption></h3>
+
+        <table border="1">
+            <tr>
+                <th>지역</th>
+                <th>현재기온</th>
+                <th colspan="2">불쾌지수/습도<%></th>
+                <th>풍속(m/s)</th>
+            </tr>
+
+            <tr>
+                <td rowspan="2">서울/경기</td>
+                <td>23</td>
+                <td>60</td>
+                <td>80</td>
+                <td>4.7</td>
+            </tr>
+
+            <tr>
+                <td>20</td>
+                <td>60</td>
+                <td>80</td>
+                <td>5.0</td>
+                
+            </tr>
+
+            <tr>
+                <td>제주도</td>
+                <td>21</td>
+                <td>65</td>
+                <td>85</td>
+                <td>3.6</td>
+                
+            </tr>
+
+
+        </table>
+        <form>
+            <h3><caption>오늘의 날씨</caption></h3>
+        자기소개 : <textarea name = "addText" rows="5" cols="30"></textarea>
+         <input type = "button" value="검색"> </br>
+         <input type = "button" value="확인"> </br>
+         <input type = "reset" value="다시 쓰기(자기소개 내용 삭제)">
+        </form>
+        
+    
+
+
+</body>
+</html>
