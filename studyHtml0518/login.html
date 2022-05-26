@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>로그인 페이지</title>
 
     <style>
 
@@ -14,14 +14,26 @@
             min-width: 1020px
         }
 
+        select {
+            width: 85px;
+            height: 25px;
+            outline: none;
+            background: #f5f6f7;
+            border: 1px solid #999;
+        }
+
+        a{
+            text-decoration: none;
+        }
+
         .main {
             text-align: center;
             margin-top: 20px;
         }
 
         .login-id-wrap { /*아이디*/
-            margin: 0px 80px 8px 80px;
-            padding: 10px;
+            margin: 0px 80px 8px 80px; /*↑→↓←테두리(border)와 이웃하는 요소 사이의 간격인 마진 영역의 크기를 설정*/
+            padding: 10px; /**/
             border: solid 1px #dadada;
             background: #fff;
         }
@@ -58,7 +70,6 @@
             cursor: pointer; /*마우스 커서*/
         }
 
-        
         /*로그인버튼*/
         .login-btn {
             background-color: #dadada;
@@ -69,6 +80,36 @@
             cursor: pointer; /*마우스 커서*/
         }
 
+        /*찾기 및 회원가입*/
+        .find_sign{
+            height: 100px;
+            grid-template-columns: 1fr 1fr 1fr; /*비율을 1대1대1로 나눈다.*/
+        }
+
+        /*찾기 및 회원가입 글자 희미하게 바꾸기*/
+        .find_sign a{
+            color: rgb(150, 150, 150);
+        }
+
+        /*아이디 찾기*/
+        .find_id{
+            margin: 3px;
+            font-size: 14px;
+            border-right: 1px solid gainsboro;
+        }
+
+        /*비밀번호 찾기*/
+        .find_pwd{
+            margin: 3px;
+            font-size: 14px;
+            border-right: 1px solid gainsboro;
+        }
+
+        /*회원가입*/
+        .sign_up{
+            margin: 3px;
+            font-size: 14px;
+        }
 
          /*가로 800px 이상일때*/
         @media(min-width : 800px) {
@@ -98,15 +139,15 @@
                 </section>
 
                 <!-- pw 찾기 및 회원가입-->
-                <section>
-                    <span>
-                        <a href="loginf.html" target="" title="id찾기">아이디 찾기</a>
+                <section class="find_sign">
+                    <span class= "find_id">
+                        <a href="loginf.html"   target="_blank" title="id찾기">아이디 찾기</a>
                     </span>
-                    <span>
-                        <a href="loginf.html" target="" title="pwd찾기">비밀번호 찾기</a>
+                    <span class="find_pwd">
+                        <a href="loginf.html"  target="_blank" title="pwd찾기">비밀번호 찾기</a>
                     </span>
-                    <span>
-                        <a href="loginf.html" target="" title="회원가입">회원 가입</a>
+                    <span class = "sign_up">
+                        <a href="loginf.html" target="_blank" title="회원가입">회원 가입</a>
                     </span>
                 </section>
         </div>
