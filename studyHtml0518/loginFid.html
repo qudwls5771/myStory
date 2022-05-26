@@ -65,7 +65,7 @@
         }
 
           /*로그인버튼박스을 아이디 찾기로 바꿈*/
-          .login-btn-wrap {
+          .findID-btn-wrap {
             height: 52px; /*로그인 버튼박스 높이 조정 ↓*/
             line-height: 55px; /*로그인 글자 위치 조정*/
             margin: 0px 100px 8px 100px; /*버튼 박스 크기 조정*/
@@ -76,7 +76,7 @@
         }
 
         /*로그인버튼을 아이디 찾기로 바꿈*/
-        .login-btn {
+        .findID-btn {
             background-color: #dadada;
             border: none; /*로그인 버튼 테두리 색*/
             color: black; /*버튼 글자 색*/
@@ -146,8 +146,8 @@
                     <div class="find-eMail-wrap">
                         <input type="email" name="email" class="find_eMail"placeholder="이메일">
                     </div>
-                    <div class="login-btn-wrap">
-                        <button class="login-btn">아이디 찾기</button>
+                    <div class="findID-btn-wrap">
+                        <button class="findID-btn">아이디 찾기</button>
                     </div>
                 </section>
 
@@ -168,4 +168,18 @@
 
 </body>
 
+    <script type="text/javascript">
+
+              $("#idName").focusout(function(){
+  			
+              if($('#idName').val() == ""){
+                    $('#check').text('이름을 입력해주세요.');
+                      $('#check').css('color', 'red');
+              }else{
+                  $('#check').hide();
+              }
+              });
+	     
+
+    </script>
 </html>
