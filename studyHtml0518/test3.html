@@ -27,8 +27,8 @@
         그에 반해 클래스는 자주 사용할 때 좋음(글자색, 굵기 나중에 적용할 수 있는 스타일 지정)*/
         #aside{background-color: gainsboro;}
         #header {
-            background-color: rgb(26, 100, 185);
             margin: 0 auto;
+            margin-top: 100px;
             
         }
 
@@ -39,7 +39,23 @@
         {/*div 태그를 수평정렬을 위해 display 옵션의 inline값을 넣습니다.*/
         display: inline-block;}
         /*태그 선택자 : */
-      
+        
+
+        .headers{
+            position: relative;
+            overflow: hidden;
+            background-color: skyblue;
+            
+        }
+
+        .logInP{
+            position: absolute;
+            top: 23px;
+            right: 0%;
+            color: black;
+            padding-right: 15px;
+        }
+
 
     </style>
 
@@ -47,8 +63,12 @@
 </head>
 <body>
     
-    <div>
-        <h2 id ="header">게시판</h2>
+    <div id="header">
+        <div class="headers">
+            <h2>게시판</h2>
+            <a href="login.html" class="logInP">로그인</a>
+        </div>
+
     <table>
         <table>
             <form>
