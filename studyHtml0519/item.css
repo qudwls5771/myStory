@@ -1,3 +1,55 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 400;
+    src: local(Montserrat-Light), url("https://www.oliveyoung.co.kr/pc-static-root/fonts/Montserrat-Light.woff2") format("woff2"), url("https://www.oliveyoung.co.kr/pc-static-root/fonts/Montserrat-Light.woff") format("woff")
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 500;
+    src: local(Montserrat), url("https://www.oliveyoung.co.kr/pc-static-root/fonts/Montserrat-Regular.woff2") format("woff2"), url("https://www.oliveyoung.co.kr/pc-static-root/fonts/Montserrat-Regular.woff") format("woff")
+}
+
+@font-face {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 700;
+    src: local(Montserrat-SemiBold), url("https://www.oliveyoung.co.kr/pc-static-root/fonts/Montserrat-SemiBold.woff2") format("woff2"), url("https://www.oliveyoung.co.kr/pc-static-root/fonts/Montserrat-SemiBold.woff") format("woff")
+}
+
+@font-face {
+    font-family: NotoSansCJKkr;
+    font-style: normal;
+    font-weight: 400;
+    src: local(NotoSansCJKkr), url("https://www.oliveyoung.co.kr/pc-static-root/fonts/NotoSansCJKkr-Regular.woff2") format("woff2"), url("https://www.oliveyoung.co.kr/pc-static-root/fonts/NotoSansCJKkr-Regular.woff") format("woff")
+}
+
+@font-face {
+    font-family: NotoSansCJKkr;
+    font-style: normal;
+    font-weight: 500;
+    src: local(NotoSansCJKkr), url("https://www.oliveyoung.co.kr/pc-static-root/fonts/NotoSansCJKkr-Medium.woff2") format("woff2"), url("https://www.oliveyoung.co.kr/pc-static-root/fonts/NotoSansCJKkr-Medium.woff") format("woff")
+}
+
+@font-face {
+    font-family: NotoSansCJKkr;
+    font-style: normal;
+    font-weight: 700;
+    src: local(NotoSansCJKkr), url("https://www.oliveyoung.co.kr/pc-static-root/fonts/NotoSansCJKkr-Bold.woff2") format("woff2"), url("https://www.oliveyoung.co.kr/pc-static-root/fonts/NotoSansCJKkr-Bold.woff") format("woff")
+}
+
+@font-face {
+    font-family: Dovemayo-Medium;
+    src: url("https://www.oliveyoung.co.kr/pc-static-root/fonts/dovemayo/Dovemayo-Medium.woff") format('woff');
+    font-weight: 400;
+    font-style: normal
+}
+
+
 body,
 html {
     -webkit-font-smoothing: antialiased;
@@ -114,4 +166,65 @@ hr {
 a {
     color: #666;
     text-decoration: none
+}
+
+
+button,
+input[type=submit] {
+    font-family: Montserrat, -apple-system, NotoSansCJKkr, AppleSDGothicNeo, Roboto, sans-serif;
+    font-weight: 700
+}
+
+body,
+html {
+    /*전체 글의 폰트 및 글자 크기 조정*/
+    word-spacing: -1px;
+    /*단어 사이의 간격*/
+    color: #666;
+    /*글자 색*/
+    font-size: 14px;
+    /*글자 크기*/
+    line-height: 20px;
+    /*줄 높이 조정*/
+    font-family: Montserrat, -apple-system, NotoSansCJKkr, AppleSDGothicNeo, Roboto, dotum, '돋움', sans-serif;
+    letter-spacing: -.04em;
+    /*글자 사이의 간격*/
+    -webkit-font-smoothing: antialiased;
+}
+
+
+:focus:not(:focus-visible) {
+    /*focus선택자는 사용자가 요소를 선택(마우스 클릭, 탭)했을 경우, 해당 요소에서 사용할 수 있다.*/
+    /*focus 선택자는 주로, 선택된 요소 자체에 스타일을 지정할 때 사용된다.*/
+    /*focus-visible은 포커스된 요소에 대한 스타일 지정이 가능하다.
+      focus와 용도가 유사해보이지만, 접근성 고려를 위해서는 focus-visible 선택자가 적절하다*/
+    outline: 0
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+    outline: 0
+}
+
+/*
+@media not all and (min-resolution:.001dpcm) {
+    @media {
+        :focus {
+            outline: 0
+        }
+    }
+}
+*/
+
+textarea {
+    /*사용자의 요소 크기 조정 권한 : none      /  horizontal(너비 조정/가로), vertical(높이 조정/ 세로), both(양쪽길이 조정)*/
+    /*resize 속성은 inline 요소나 overflow:visible 인 block 요소엔 적용 안 됨.따라서, overflow 속성값이 "scroll", "auto" , 
+     "hidden" 인지 먼저 꼭 확인. 보통은, overflow:auto 와 함께 사용.*/
+    resize: none
+}
+
+caption {
+    /*테이블 정의할 때(ex 사진, 삽화)*/
+    width: 0;
+    height: 0;
+    text-indent: -9999px
 }
