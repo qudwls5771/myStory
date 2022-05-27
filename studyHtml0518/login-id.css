@@ -1,10 +1,10 @@
 @charset "utf-8";
-            .main .login-id {
+            .main .login_id {
                 margin-top: 50px;
             }
     
     
-            .login-id-wrap {
+            .login_id_wrap {
                 /*아이디*/
                 margin: 0px 80px 8px 80px;
                 /*↑→↓←테두리(border)와 이웃하는 요소 사이의 간격인 마진 영역의 크기를 설정*/
@@ -22,7 +22,7 @@
             }
     
     
-            .login-pw-wrap {
+            .login_pw_wrap {
                 /*비밀번호*/
     
                 margin: 0px 80px 8px 80px;
@@ -41,7 +41,7 @@
     
     
             /*로그인버튼박스*/
-            .login-btn-wrap {
+            .login_btn_wrap {
                 height: 52px;
                 /*로그인 버튼박스 높이 조정 ↓*/
                 line-height: 55px;
@@ -57,7 +57,7 @@
             }
     
             /*로그인버튼*/
-            .login-btn {
+            .login_btn {
                 background-color: #dadada;
                 border: none;
                 /*로그인 버튼 테두리 색*/
