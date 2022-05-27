@@ -1,0 +1,31 @@
+         /*찾기 및 회원가입*/
+        .find_sign {
+            height: 100px;
+            grid-template-columns: 1fr 1fr 1fr;
+            /*비율을 1대1대1로 나눈다.*/
+        }
+
+        /*찾기 및 회원가입 글자 희미하게 바꾸기*/
+        .find_sign a {
+            color: rgb(150, 150, 150);
+        }
+
+        /*아이디 찾기*/
+        .find_id {
+            margin: 3px;
+            font-size: 14px;
+            border-right: 1px solid gainsboro;
+        }
+
+        /*비밀번호 찾기*/
+        .find_pwd {
+            margin: 3px;
+            font-size: 14px;
+            border-right: 1px solid gainsboro;
+        }
+
+        /*회원가입*/
+        .sign_up {
+            margin: 3px;
+            font-size: 14px;
+        }
