@@ -1,0 +1,35 @@
+        /*게시글 헤더*/
+        .board_H {
+            width: 1020px;
+            height: 100%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: aqua;
+        }
+
+        .board_N {
+            display: inline-block;
+            width: 50px;
+            background-color: blue;
+        }
+
+        .board_T {
+            display: inline-block;
+            width: 700px;
+            text-align: center;
+            background-color: green;
+        }
+
+        .board_D {
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            background-color: gray;
+        }
+
+        .board_V {
+            display: inline-block;
+            background-color: red;
+            text-align: center;
+            width: 50px;
+        }

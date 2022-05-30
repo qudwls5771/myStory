@@ -1,0 +1,35 @@
+  /*게시글*/
+  .board {
+    width: 1020px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: aqua;
+}
+
+.board_Number {
+    display: inline-block;
+    width: 50px;
+    background-color: blue;
+}
+
+.board_Title {
+    display: inline-block;
+    width: 700px;
+    text-align: center;
+    background-color: green;
+}
+
+.board_Day {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    background-color: gray;
+}
+
+.board_View {
+    display: inline-block;
+    background-color: red;
+    text-align: center;
+    width: 50px;
+}
