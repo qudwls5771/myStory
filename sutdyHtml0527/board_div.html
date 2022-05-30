@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판</title>
+    <style>
+         
+        #Container {
+            width: 100%;
+            min-width: 1020px
+        }
+
+        #Contents {
+            width: 1020px;
+            height: 100%;
+            margin: 0 auto;
+            background-color: pink;
+            border: 1px solid green;
+        }
+
+        h2{
+          display: block;  
+          margin-block-start: 1.33em;
+          margin-block-end: 1.33em;
+          margin-inline-start: 0px;
+          margin-inline-end: 0px;
+          font-weight: bold;
+        }
+
+        a {
+          color: #666;
+          text-decoration: none
+        }
+
+
+
+        .main{
+            position: relative;
+            /*자기 기준으로 배치*/
+            width: 100%;
+            min-height: 246px;
+            /*최소 높이 246px*/
+            margin-top: 20px;
+            /*테두리(border)와 이웃하는 요소 사이의 간격인 마진 영역의 크기를 설정*/
+            border-top: 1px solid #000
+            /*
+                inline: 줄 속에 넣는 요소라고 하며, 등 특정 문자열을 선택할 때 
+                사용하는 태그가 그 예입니다
+                block: 좀 더 넓은 범위를 지정할 때 사용하는같은 태그로 block 요소를 사용할 때는 
+                가로 화면 100%를 차지하기 때문에
+            */
+        }
+
+
+        .board_Header{
+            width: 1020px;
+            height: 100%;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+
+        .board_Count{
+            display: inline-block;
+            width: 400px;
+            /*나중에 카운터 채워야 됨*/
+        }
+
+        .board_Find_Name{
+            display: inline-block;
+            width: 300px;
+            text-align: center;
+        }
+        
+        .board_Search{
+            display: inline-block;
+            width: 300px;
+            text-align: center;
+        }
+
+        p{
+            margin-top: 5px;
+            height: 10px;
+        }
+
+        .board_{
+            width: 1020px;
+            height: 100%;
+            margin: 0 auto;
+            text-align: center
+            background-color: aqua;
+        }
+        .board_N{
+            display: inline-block;
+            width: 50px;
+            background-color: blue;
+        }
+        .board_S{
+            display: inline-block;
+            width: 700px;
+            text-align: center;
+            background-color: green;
+        }
+        .board_T{
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            background-color: gray;
+        }
+        .board_V{
+            display: inline-block;
+            background-color: red;
+            text-align: center;
+            width: auto;
+        }
+
+
+
+
+
+
+    </style>
+
+
+</head>
+<body>
+    <div id ="Container">
+        <div id="Contents">
+            <h2>게시글</h2>
+            <div class="main">
+                <div class="board_Header">
+                    <div class="board_Count">
+                       <p>총 00개의 게시물이 있습니다.</p>
+                    </div>
+                    <div class="board_Find_Name">SELECT
+                        <select name="select_c"> <!--select_catagori?-->
+                            <option value = "제목">제목</option>
+                            <option value = "조회수">조회수</option>
+                            <option value = "날짜">날짜</option>
+                        </select>
+                    </div>
+                    <div class="board_Search">
+                        <input type="search" size="10">
+                        <input type="button" value="검색" name="search_T">
+                    </div>
+                </div>
+                <div class="board_">
+                    <div class="board_N">
+                         번호
+                    </div>
+                    <div class="board_S">
+                        게시글 제목
+                    </div>
+                    <div class="board_T">
+                        날짜
+                    </div>
+                    <div class="board_V">
+                        조회수
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
