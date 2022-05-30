@@ -70,3 +70,14 @@
                 cursor: pointer;
                 /*마우스 커서*/
             }
+
+            #alert{
+                border-color: transparent;
+            }
+            .account {
+                display: block;
+                margin-bottom: 3px;
+                padding: 3px;
+                border: 1px solid lightgray;
+                border-radius: 3px;
+            }
