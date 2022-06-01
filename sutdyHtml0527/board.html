@@ -13,7 +13,6 @@
         }
 
         #Contents {
-            position: relative;
             width: 1020px;
             height: 100%;
             margin: 0 auto;
@@ -68,7 +67,7 @@
             width: 400px;
             /*나중에 카운터 채워야 됨*/
         }
-        /*SELECT : 제목*/
+
         .board_Find_Name {
             display: inline-block;
             width: 300px;
@@ -85,34 +84,101 @@
             margin-top: 5px;
             height: 10px;
         }
-        /*h2글자는 왼쪽으로*/
+
         h2 {
             margin-left: 20px;
         }
 
-        /*게시글 로그인*/
-        .logP {
-            position: absolute;
-            top: 40px;
-            right: 0%;
-            color: black;
-            padding-right: 15px;
+
+        .board_H {
+            width: 1020px;
+            height: 100%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: aqua;
         }
 
+        .board_N {
+            display: inline-block;
+            width: 50px;
+            background-color: blue;
+        }
+
+        .board_T {
+            display: inline-block;
+            width: 700px;
+            text-align: center;
+            background-color: green;
+        }
+
+        .board_D {
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            background-color: gray;
+        }
+
+        .board_V {
+            display: inline-block;
+            background-color: red;
+            text-align: center;
+            width: 42px;
+        }
+
+
+        .board {
+            width: 1020px;
+            height: 100%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: aqua;
+        }
+
+        .board_Number {
+            display: inline-block;
+            width: 50px;
+            background-color: blue;
+        }
+
+        .board_Title {
+            display: inline-block;
+            width: 700px;
+            text-align: center;
+            background-color: green;
+        }
+
+        .board_Day {
+            display: inline-block;
+            width: 200px;
+            text-align: center;
+            background-color: gray;
+        }
+
+        .board_View {
+            display: inline-block;
+            background-color: red;
+            text-align: center;
+            width: 42px;
+        }
+
+        .board_Write{/*덧글쓰기*/
+            display: inline-block;
+            background-color: yellow;
+            text-align: left;
+
+
+        }
+
+
+
+        
     </style>
-        <!--게시글 헤더 : 번호, 게시글 제목, 날짜, 조회수-->
-         <link rel="stylesheet" type ="text/css" href="board_Head.css"> 
-         <!--사용자가 올리는 게시글 : 번호, 게시글 제목, 날짜, 조회수-->
-         <link rel="stylesheet" type ="text/css" href="board_gaesi.css"> 
-
-
 </head>
 
 <body>
     <div id="Container">
         <div id="Contents">
             <h2>게시글</h2>
-            <a href="login.html" class="logP">로그인</a>
             <div class="main">
                 <div class="board_Header">
                     <div class="board_Count">
@@ -163,6 +229,10 @@
                     <div class="board_View">
                         조회수
                     </div>
+                </div>
+                <div class="board_Write">
+                    <textarea cols="40" rows="10"></textarea>
+
                 </div>
             </div>
         </div>
