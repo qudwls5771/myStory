@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인자와 매개변수</title>
+
+    <script>
+        function add(x, y, z) {
+            let sum;
+            console.log('x type' + typeof x);
+            console.log('y type' + typeof y);
+            console.log('z type' + typeof z);
+            if ((y === undefined) && (z === undefined)) {/*둘다 참일경우*/
+                sum = x;
+            }
+            else if (z === undefined) {
+                sum = x + y;
+            }
+            else {
+                sum = x + y + z;
+            }
+            return;
+        }
+        console.log('add(2)')
+        let r1 = add(2);
+        console.log('add(2,3)')
+        let r2 = add(2, 3);
+        console.log('add(4, 5, 6)')
+        let r3 = add(4, 5, 6);
+        document.write("함수 호출 인자 부족" + r1 + "<p/>")
+        document.write("함수 호출 인자 부족" + r2 + "<p/>")
+        document.write("정상적인 함수 호출" + r3 + "<p/>")
+
+
+        
+        /*인자를 arguments 객체로 처리하기 */
+        function add_arg() { /*매개변수 쓰는게 좋음*/
+            let i;
+            console.log(i);
+            let sum = 0;
+            console.dir(arguments);/*인자값 매개변수를 안쓰게 하기위해서 */
+            for (i = 0; i < arguments.length; i++) {
+                sum = sum + arguments[i]; /*배열의 시작점은 0*/
+            }
+            document.write("수행결과 : " + sum + "</p>");
+        }
+        add(2, 3); // 매개변수에 들어가는 값 = 인자 (argument), 암묵적으로 arguments 객체가 함수 내부에 전달
+        add(2, 3, 4);
+        add(4, 5, 6, 7, 8);
+        add(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
