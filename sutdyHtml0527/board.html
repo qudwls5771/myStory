@@ -20,14 +20,7 @@
             border: 1px solid green;
         }
 
-        h2 {
-            display: block;
-            margin-block-start: 1.33em;
-            margin-block-end: 1.33em;
-            margin-inline-start: 0px;
-            margin-inline-end: 0px;
-            font-weight: bold;
-        }
+   
 
         a {
             color: #666;
@@ -54,48 +47,32 @@
         }
 
 
-        .board_Header {
-            width: 1020px;
-            height: 100%;
-            margin: 0 auto;
-            background-color: white;
-        }
-
-
-        .board_Count {
-            display: inline-block;
-            width: 400px;
-            /*나중에 카운터 채워야 됨*/
-        }
-
-        .board_Find_Name {
-            display: inline-block;
-            width: 300px;
-            text-align: center;
-        }
-
-        .board_Search {
-            display: inline-block;
-            width: 300px;
-            text-align: center;
-        }
-
         p {
             margin-top: 5px;
             height: 10px;
         }
 
-        h2 {
-            margin-left: 20px;
+    
+        .gaesigle {
+            position: relative;
+            overflow: hidden;
         }
 
+        .login_go {
+            position: absolute;
+            top: 23px;
+            right: 0%;
+            color: black;
+            padding-right: 15px;
+        }
 
 
         
     </style>
 
-    <link rel="stylesheet" type="text/css" href="board_Head.css">
-    <link rel="stylesheet" type="text/css" href="board_gaesi.css">
+    <link rel="stylesheet" type="text/css" href="./board_file/board_Head.css">
+    <link rel="stylesheet" type="text/css" href="./board_file/board_gaesi.css">
+    <link rel="stylesheet" type="text/css" href="./board_file/board_top.css">
 
 
 </head>
@@ -103,7 +80,10 @@
 <body>
     <div id="Container">
         <div id="Contents">
+            <div class="gaesigle">
             <h2>게시글</h2>
+            <a href="login.html" class="login_go">로그인</a>
+            </div>
             <div class="main">
                 <div class="board_Header">
                     <div class="board_Count">
