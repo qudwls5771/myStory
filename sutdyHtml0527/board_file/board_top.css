@@ -1,0 +1,26 @@
+
+        .board_Header {
+            width: 1020px;
+            height: 100%;
+            margin: 0 auto;
+            background-color: white;
+        }
+
+
+        .board_Count {
+            display: inline-block;
+            width: 400px;
+            /*나중에 카운터 채워야 됨*/
+        }
+
+        .board_Find_Name {
+            display: inline-block;
+            width: 300px;
+            text-align: center;
+        }
+
+        .board_Search {
+            display: inline-block;
+            width: 300px;
+            text-align: center;
+        }
