@@ -26,13 +26,6 @@
             
         }
 
-        .main {
-            text-align: center;
-            border-top: 1px solid black;
-            margin-top: 50px;
-            padding-top: 60px;
-            background-color: pink;
-        }
 
         /*가로 800px 이상일때*/
         @media(min-width : 800px) {
@@ -46,49 +39,24 @@
             text-align: center;
         }
     </style>
-     <script src="logInJs.js"></script>
         <link rel="stylesheet" type="text/css" href="./logins/login-id.css">
-        <link rel="stylesheet" type="text/css" href="./logins/find_sign.css">
 
 </head>
 
-    <script src="logInJs.js"></script>
 <body>
-    <h1>로그인 입니다</h1>
+
     <div id="Container">
-        <div class="main">
             <!--로그인-->
-            <div class="login_id">
-                <!-- section : 독립적인 구역이다.-->
-                <div class="login_id_wrap">
-                    <input type="text" id="id" class="log_id" class="account"placeholder="아이디">
+            <div class="main">
+                <h1 class="logo">Acidgram</h1>
+                <div class="container">
+                    <input type="text" placeholder="ID" id="id" class="account">
+                    <input type="password" placeholder="Password" id="password" class="account">
+                    <button id="login" class="account">login</button>
+                    <p id="alert" class="account"> </p>
                 </div>
-                <div class="login_pw_wrap">
-                    <input type="password" id="pwd" class="log_pwd" class="account" placeholder="비밀번호">
-                </div>
-                <div class="login_btn_wrap">
-                    <button class="login_btn" id="login" class="account">로그인</button>
-                </div>
-                <p id="alert" class="account"></p>
             </div>
-            <!-- pw 찾기 및 회원가입-->
-            <div class="find_sign">
-                <span class="find_id">
-                    <!--ID찾기-->
-                    <a href="loginFid.html" target="_blank" title="id찾기">아이디 찾기</a>
-                </span>
-                <span class="find_pwd">
-                    <!--PWD찾기-->
-                    <a href="loginFPwd.html" target="_blank" title="pwd찾기">비밀번호 찾기</a>
-                </span>
-                <span class="sign_up">
-                    <!--회원가입-->
-                    <a href="sign_up.html" target="_blank" title="회원가입">회원 가입</a>
-                </span>
-            </div>
-        </div>
+            <script src="logInJs.js"></script> 
     </div>
-
 </body>
-
 </html>

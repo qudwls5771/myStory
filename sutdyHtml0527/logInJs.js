@@ -1,11 +1,11 @@
 const id = document.getElementById('id')
-const pwd = document.getElementById('pwd')
+const password = document.getElementById('password')
 const login = document.getElementById('login')
 let errStack = 0;
-
+// alert를 잊어먹으면 안됨 알림
 login.addEventListener('click', () => {
     if (id.value == 'peanut96') {
-        if (pwd.value == '0215') {
+        if (password.value == '0215') {
             alert('로그인 되었습니다!')
         }
         else {
