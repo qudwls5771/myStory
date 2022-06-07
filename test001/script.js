@@ -2,7 +2,7 @@ const id = document.getElementById('id')
 const password = document.getElementById('password')
 const login = document.getElementById('login')
 let errStack = 0;
-
+// alert를 잊어먹으면 안됨 알림
 login.addEventListener('click', () => {
     if (id.value == 'acid') {
         if (password.value == '0000') {
