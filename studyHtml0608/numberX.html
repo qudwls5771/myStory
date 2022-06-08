@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>같은 숫자는 싫어</title>
+
+
+    <script>
+        function solution(arr) {
+            var answer = [];
+            var b = arr.length
+            for (var i = 0; i < b; i++) {
+                var num = answer[answer.length - 1];
+                if (num !== arr[i]) { // 여기서 불일치할 경우 숫자가 들어감
+                    answer.push(arr[i]);
+                }
+            }
+            
+            console.log(answer)
+            console.log(num)
+            console.log(arr[i])
+            return answer;
+        }
+        let input = [4, 4, 4, 3, 3];
+        console.log(solution(input));
+
+        let arr = [['a', 'b'], ['c', 'd'], ['e', 'f'], ['g', 'h']]
+        console.log(arr[0][2]);
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이상한 문자 만들기</title>
+
+
+    <script>
+        function solution(s) {
+            var answer = "";
+            var list = s.split(" ");// split단어를 쪼개서 
+
+            for (var i = 0; i < list.length; i++) {
+                for (var j = 0; j < list[i].length; j++) {
+                    if (j % 2 === 0) {
+                        answer = answer + list[i][j].toUpperCase();
+                    } else {
+                        answer = answer + list[i][j].toLowerCase();
+                    }
+
+                }
+                if (i < list.length - 1) {
+                    answer = answer + " ";
+                }
+            }
+            console.log(answer)
+            return answer;
+        }
+        var input = ['try hello world'];
+        console.log(solution(input));
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
