@@ -1,28 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>K번째 경우의 수</title>
-    
+
     <script>
-        function solution(array, commands){
+        function solution(array, commands) {
             var answer = [];
-            
+            var i = 0;
+            var j = 0;
+            var k = 0;
+            //커맨드는 i,j,k 원소를 가지는 2차원 배열로 문제 설명에 나와있음
+            for (var m = 0; m < commands.length; m++) 
+            {   //2차원 배열이기 때문에 m,0에 있는 숫자를 가져온다.
+                i = commands[m][0];
+                j = commands[m][1];
+                k = commands[m][2];
 
+                // i번째 ~ j번째까지 자른다. i-1을 붙이는 이유는 배열은 0부터 시작
+                var sliced = array.slice(i - 1, j); 
+                // 배열 오름차순 정리
+                var sorted = sliced.sort((a, b) => a - b); 
+                // 배열에 숫자 집어넣기 push
+                answer.push(sorted[k - 1]); 
+                
 
-
-
-
-
-
-
+            }
             return answer;
         }
+
     </script>
 </head>
+
 <body>
-    
+
 </body>
+
 </html>
