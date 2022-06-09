@@ -14,21 +14,67 @@
             var j = 0;
             var k = 0;
             //커맨드는 i,j,k 원소를 가지는 2차원 배열로 문제 설명에 나와있음
-            for (var m = 0; m < commands.length; m++) 
-            {   //2차원 배열이기 때문에 m,0에 있는 숫자를 가져온다.
+            for (var m = 0; m < commands.length; m++) {   //2차원 배열이기 때문에 m,0에 있는 숫자를 가져온다.
                 i = commands[m][0];
                 j = commands[m][1];
                 k = commands[m][2];
 
                 // i번째 ~ j번째까지 자른다. i-1을 붙이는 이유는 배열은 0부터 시작
-                var sliced = array.slice(i - 1, j); 
+                var sliced = array.slice(i - 1, j);
                 // 배열 오름차순 정리
-                var sorted = sliced.sort((a, b) => a - b); 
+                var sorted = sliced.sort((a, b) => a - b);
                 // 배열에 숫자 집어넣기 push
-                answer.push(sorted[k - 1]); 
-                
+                answer.push(sorted[k - 1]);
+
 
             }
+            return answer;
+        }
+
+        function solutions(array, commands) {
+            var answer = [];
+            var i = 0;
+            var j = 0;
+            var k = 0;
+
+            for (var m = 0; m < commands.length; m++) {
+                console.log("array이는?" + array);
+                console.log("commands?" + commands);
+                i = commands[m][0];
+                console.log("i는?" + i);
+                j = commands[m][1];
+                console.log("j는?" + j);
+                k = commands[m][2];
+                console.log("k는?" + k);
+                console.log("arry이는?" + array);
+
+                var sliced = array.slice(i - 1, j);
+                console.log("출력값이다. sliced" + sliced);
+                var sorted = sliced.sort((a, b) => a - b);
+                console.log("출력값이다 sort." + sorted);
+                answer.push(sorted[k - 1]);
+                console.log("sorted[k-1]출력" + sorted[k - 1]);
+
+            }
+
+
+            return answer;
+        }
+
+        function solution(array, commands) {
+            var answer = [];
+
+            for (var i = 0; i < commands.length; i++) {
+                var arrays = (array.slice(commands[i][0] - 1, commands[i][1]));
+                console.log("arrays임" + arrays);
+                var arrayss = (arrays.sort((a, b) => a - b));
+                console.log("arrayss임" + arrayss);
+                answer.push(arrayss[commands[i][2] - 1]);
+
+                console.log("answer은" + answer);
+            }
+
+
             return answer;
         }
 

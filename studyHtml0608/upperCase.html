@@ -13,17 +13,17 @@
             var answer = "";
             var list = s.split(" ");// split단어를 쪼개서 
 
-            for (var i = 0; i < list.length; i++) {
-                for (var j = 0; j < list[i].length; j++) {
-                    if (j % 2 === 0) {
-                        answer = answer + list[i][j].toUpperCase();
+            for (var i = 0; i < list.length; i++) { //문자열로 찾기
+                for (var j = 0; j < list[i].length; j++) {//문자로 찾기
+                    if (j % 2 === 0) {//j%2 나머지가 0일경우 짝수로, 아니면 홀수로
+                        answer += list[i][j].toUpperCase();
                     } else {
-                        answer = answer + list[i][j].toLowerCase();
+                        answer += list[i][j].toLowerCase();
                     }
 
                 }
-                if (i < list.length - 1) {
-                    answer = answer + " ";
+                if (i < list.length - 1) {//문자처리 -1을 하지 않으면 뒤에 공백문자 생성
+                    answer += " ";
                 }
             }
             console.log(answer)
