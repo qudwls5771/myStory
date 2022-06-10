@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모의고사</title>
+
+
+
+    <script>
+        function solution(answers) {
+            var answer = [];
+            var supoja = [0, 0, 0]; //수포자 점수
+            var jjick = [[1, 2, 3, 4, 5],
+            [2, 1, 2, 3, 2, 4, 2, 5],
+            [3, 3, 1, 1, 2, 2, 4, 4, 5, 5]];
+            var ds = [];
+            for (var i = 0; i < answers.length; i++) { // 문제 많이 맞춘 사람 찾는거
+                if (answers[i] === jjick[0][i % 5]) {
+                    supoja[0]++;
+                    console.log("1번" + supoja);
+                }
+                if (answers[i] === jjick[1][i % 8]) {
+                    supoja[1]++;
+                    console.log("2번" + supoja);
+                } 
+                if (answers[i] === jjick[2][i % 10]) {
+                    supoja[2]++;
+                    console.log("3번" + supoja);
+                }
+
+            }
+            for (var max = 0; max < supoja.length; max++) {//점수 높은사람 구하는 것.
+                if (supoja[max] > ds) {
+                    ds = supoja[max];
+                    console.log("등수" + supoja);
+                }
+            }
+
+            for (var j = 0; j < supoja.length; j++) {
+                if (ds === supoja[j]) {
+                    answer.push(j+1);/*j는 0부터 시작해서 +1*/
+                    console.log("수포자 등수 : " + answer)
+                }
+
+            }
+
+
+
+
+
+            return answer;
+        }
+
+        var input = [1, 2, 3, 4, 5];
+        console.log(solution(input));
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
