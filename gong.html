@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>최대공약수와 최소공배수</title>
+
+    <script>
+        function solution(n, m) {
+            var answer = [];
+
+            //math메소드
+
+            var max_n = n;
+            var min_m = m;
+
+            for(var i = 0; i<n; i++){
+                for(var j = 0; j<m; j++){
+                    var mn = m;
+                    m = n % m;
+                    n = mn;
+                }
+            }
+            answer.push(n);
+            answer.push((max_n * min_m)/n);
+            console.log(answer);
+
+
+
+            return answer;
+        }
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>
